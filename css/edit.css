@@ -140,10 +140,12 @@ header{
 }
 
 section, 
-article{
+article,
+.custom-button{
     display: flex;
-    margin: var(--spacing-12) 0;
+    margin: var(--spacing-12) 0; 
     align-items: center;
+    
  
 }
 
@@ -181,36 +183,123 @@ h5{
     font-weight: 400;
     line-height: 29.05px;
     
+    
 }
 
-.product-name{
+.text-decoration{
     font-size: var(--font-medium);
     font-weight: 400;
     border-bottom: 2px solid var(--primary-900);
-    margin-bottom: 5px;
     margin-left: var(--spacing-16);
+    margin-right: var(--spacing-36);
     }
 
+    
+    #rectangulo {
+        width: 200px;
+        height: 150px;
+        border: 1px solid #333;
+        position: relative;
+    }
+    
+    .resizable {
+        resize: both;
+        overflow: auto;
+    }
+    
+    /* BOTÓN ELEGIR ARCHIVOS */
 
-/* Estilos para el rectángulo */
-.resizable-rectangle {
+    .custom-button {
+        width: var(--spacin-128);
+        height: var(--spacing-24);
+        font-family: Arial, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.1px;
+        letter-spacing: 4%;
+        text-align: right;
+        color: var(--dark-900);
+        background-color: rgba(31, 31, 31, 0.1);
+        border: 2px solid var(--dark-500);
+        cursor: pointer;
+        outline: none; /* Elimina el borde de enfoque predeterminado */
+        border-radius: 3px;
+        justify-content: center;
+        margin-right: var(--spacing-8);
+    }
+
+      
+      .custom-button:hover {
+        background-color: rgba(31, 31, 31, 0.1); /* Cambia el color de fondo al pasar el cursor sobre el botón */
+      }
+
+      .no-file{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+      }
+
+      /* IMÁGENES */
+
+      .pic{
+        width: 150px;
+        height: 150px;
+      }
+      
+      /* Ajusta el estilo de la línea roja */
+.linea-roja {
+    width: 150px;
+    height: 1px;
+    background-color: var(--primary-900);
+    /* margin: 5px auto; */ /* Espacio entre la imagen y la línea, y centrar la línea horizontalmente */
+  }
+
+  
+  
+  /* Ajusta los estilos de los divs que contienen la imagen y el párrafo */
+  .frente-dorso__div {
+    text-align: center;
     position: relative;
-    width: 200px; /* Ancho inicial */
-    height: 100px; /* Altura inicial */
-    /* background-color: lightblue; */
-    border: 1px solid #ccc;
-}
+    margin-right: var(--spacing-24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Ajusta el margen derecho del último div para evitar espacio adicional */
+  .frente-dorso__div:last-child {
+    margin-right: 0;
+  }
 
-/* Estilos para el asa de redimensionamiento */
-.resize-handle {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    bottom: 0;
-    right: 0;
-    cursor: nwse-resize; /* Cursor de redimensionamiento diagonal */
-}
+  .frente-dorso{
+    justify-content: center;
+  }
+
+  /*BOTÓN MODIFICAR PRODUCTO*/
+
+  button{
+    width: 175px;
+    height: 44.33px;
+    background-color: var(--primary-900);
+    border: none;
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+    color: var(--light-font-solid);
+    cursor: pointer;
+    
+  }
+
+
+  
+      
+      
+      
+    
+    
+
+
+    
+
 
 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Editar Item</title>
     <link rel="stylesheet" href="./css/edit.css">
+    <link rel="icon" href="./img/branding/isotype.svg" type="image/x-icon">
     
 
   </head>
@@ -86,34 +87,34 @@
             </article>
 
             <article>
-                <p class="product-name">Kakashi Hatake Shippuden Saga</p>
+                <p class="text-decoration">Kakashi Hatake Shippuden Saga</p>
             </article>
         </section>
 
+     
+        <!-- SECCIÓN DEL RECTÁNGULO -->
+        
         <section>
             <article>
-                <div class="resizable-rectangle">
-                    <!-- Contenido del rectángulo -->
-                    <p>Contenido del rectángulo</p>
-                    <!-- Asa de redimensionamiento -->
-                    <div class="resize-handle"></div>
-                </div>
-
+                <div id="rectangulo" class="resizable"></div>
+                
             </article>
         </section>
+
+        <!-- SKU PRICE STOCK -->
 
         <section>
             <article>
                 <p>SKU:</p>
-                <P>NAR001012</P>
+                <p class="text-decoration">NAR001012</p>
             </article>
             <article>
                 <p>Precio:</p>
-                <p>$ 1.799,00</p>
+                <p class="text-decoration">$ 1.799,00</p>
             </article>
             <article>
                 <p>Stock:</p>
-                <p>10</p>
+                <p class="text-decoration">10</p>
             </article>
         </section>
 
@@ -122,7 +123,7 @@
         <section>
             <article>
                 <p>Descuento:</p>
-                <p>10%</p>
+                <p class="text-decoration">10%</p>
                 <p>Cuotas:</p>
                 <div class="custom-select">
                     
@@ -141,24 +142,28 @@
         <section>
             <article>
             <p>Imágenes:</p>
-            <p>Elegir archivos</p>
-            <p>No se ha seleccionado ningún archivo</p>
+            <button class="custom-button">Elegir archivos</button>
+            <p class="no-file">No se ha seleccionado ningún archivo</p>
         </article>
         </section>
 
         
         <section>
-            <article>
-                <div>
-                    <img src="./img/star-wars/baby-yoda-1.webp" alt="baby-yoda-1">
-                     <p>Frente</p>
+            <article class="frente-dorso">
+                <div class="frente-dorso__div">
+                  <img class="pic" src="./img/star-wars/baby-yoda-1.webp" alt="baby-yoda-1">
+                  <div class="linea-roja"></div>
+                  <p>Frente</p>
                 </div>
-                <div>
-                    <img src="./img/star-wars/baby-yoda-box.webp" alt="baby-yoda-box">
-                    <p>Dorso</p>
+                <div class="frente-dorso__div">
+                  <img class="pic" src="./img/star-wars/baby-yoda-box.webp" alt="baby-yoda-box">
+                  <div class="linea-roja"></div>
+                  <p>Dorso</p>
                 </div>
-            </article>
-        </section>
+              </article>
+            </section>
+
+            <!-- BOTÓN MODIFICAR PRODUCTO -->
 
         <section>
             <a href="">
@@ -196,5 +201,6 @@
     <p>All rights reserved 2022 - Funkoshop &copy;</p>
     </footer>
   </body>
+  <script src="script.js"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </html>
